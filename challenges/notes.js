@@ -30,3 +30,16 @@ const sugarCane = () => {
 }
 
 sugarCane();
+
+// objects and functions together
+
+const myString = "Joat";
+
+myString.replace("t","x"); // this doesn't change the string "joat" in myString, it only returns the string with "x" replacing "t" once!
+
+console.log(myString);
+
+const newName = myString.replace("t","x"); // assigning the function of replace() to a variable does change the string in 
+                                            // myString as long as you now refer to the new variable newName instead of myString
+
+console.log(newName);
