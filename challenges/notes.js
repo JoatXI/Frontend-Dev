@@ -43,3 +43,27 @@ const newName = myString.replace("t","x"); // assigning the function of replace(
                                             // myString as long as you now refer to the new variable newName instead of myString
 
 console.log(newName);
+
+
+// array methods example
+
+str = "first code";
+
+const result = str.toUpperCase().split(" "); // this changes the string "first code" in the str variable to all UPPERCASE letters and 
+                                            // then the "split(" ")" method takes whatever argument passed in (a space in this case) and separate
+                                            // the string "first code" into 2 different strings. Methods such as "toUpperCase()" and "split()"
+                                            // can be used or chained together by using "."
+
+console.log(result);
+
+console.log(result.indexOf("FIRST")); // returns the index of the string "FIRST" in the result variable above 
+
+// this can also be done in broken down steps instead of chaining in different mutiple methods in one go... example given below;
+
+// remember the str variable still has the string "first code" that remains unchanged
+
+const step1 = str.toUpperCase();
+const step2 = step1.split(" ");
+const step3 = step2.indexOf("FIRST");
+
+console.log(step3)
